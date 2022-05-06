@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  letter-spacing: normal;
+  font-weight: 300;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.card{
+  width: 340px;
+  height: 490px;
+  padding: 2px;
+  border-radius: 12px;
+}
+
+.card:hover{
+  transform: translateY(-2px);
+  transition: ease;
+}
+
+.card-body{
+  border-top: 1px solid #9999997b;
+  height: 180px;
+}
+
+.card-contet p{
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+.card-contet{
+  padding: 2px;
+}
+
+.price-box{
+  margin-bottom: 13px;
+}
+
+.price-box .price-value-old{
+  display: block;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 500;
+}
+
+.text-em{
+  color: black;
+  line-height: 18.9px;
+}
+
+.text-promotion{
+  line-height: 17.5px;
+  color: #00a650;
+}
+
+.price-box sup{
+  font-size: 10px;
+}
+
+.price-box .box-promotion span{
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.price-box .box-promotion small{
+  display: inline;
+  font-size: 14px;
+  margin-left: 5px;
+  color: #00a650;
+  letter-spacing: normal;
+  line-height: 18.9px;
+  text-align: left;
+}
+
+.link-item{
+  text-decoration: none;
+}
+
+figure{
+  padding: 2px;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+}
+
+figure img {
+  object-fit: contain;
+  min-height: 284px;
+  max-height: 284px;
+  max-width: 284px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+

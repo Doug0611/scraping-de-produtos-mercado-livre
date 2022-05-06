@@ -1,0 +1,32 @@
+
+<div class="col">
+    <div class="card shadow-sm">
+        <a class="link-item" href="{{item.get('link_product')}}" target="_blank">
+            <figure>
+                <img src="{{item.get('image')}}" class="d-block w-100" alt="...">
+            </figure>
+
+            <div class="card-body">
+                <div class="card-contet">
+                    <div class="price-box">
+                        <span class="price-value-old"><s>{{item.get('old_price')}}</s></span>
+                        <div class="box-promotion">
+                            <span >{{item.get('price')}}<sup>{{item.get('price_cents')}}</sup></span>
+                            <small>{{item.get('price_descount')}}</small>
+                        </div>
+                        <small class="text-promotion">
+                            {% if item.get('installments') == '' %}
+                                <span class="text-em"></span> {{item.get('installments')}}
+                            {% else %}
+                                <span class="text-em">em</span> {{item.get('installments')}}
+                            {% endif %}
+                        </small>
+                    </div>
+                    <p>{{item.get('title')}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+            
+

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Day Promotion | Home{% endblock title %}
+
+{% block head %}
+    {{super()}}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cards.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/etiqueta-de-preco.ico') }}" type="image/x-icon">
+{% endblock head %}
+
+{% block contet %}
+    
+{% include 'includes/_nav.html' %}
+<main>
+    {% include 'includes/_hero.html' %}
+
+    <div class="album py-4 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
+                {% for item in soup %}
+                    {% include 'includes/_cards_product.html' %}
+                {% endfor %}  
+            </div> 
+        </div> 
+    </div> 
+
+</main>
+{% endblock contet %}
+
+{% block footer %}
+<div class="overlay">
+    <div class="loader">
+       
+    </div>
+</div>
+{% endblock footer %}
+
